@@ -1,6 +1,13 @@
+$fontKingButcherPath: '../../assets/fonts/King\ Butcher\ .otf';
+$fontKhandPath: '../../assets/fonts/Khand-Regular.ttf';
+
 @font-face {
     font-family: "King Butcher";
-    src: url('../../assets/fonts/King\ Butcher\ .otf') format('truetype');
+    src: url('#{$fontKingButcherPath}') format('truetype');
+}
+@font-face {
+    font-family: "Khand";
+    src: url('#{$fontKhandPath}') format('truetype');
 }
 
 @mixin text-main-fonts {
@@ -9,16 +16,52 @@
     font-weight: 100;
 }
 
-.catchtitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+section {
     height: 100vh;
-    
+    display: flex;
+    color: #F2F2F2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        font-size: 96px;
+        @include text-main-fonts;
+        margin-top: 0.3em;
+    }
+    h3 {
+        @include text-main-fonts;
+    }
+}
+
+.catchtitle {
+
+    text-align: center;
+    background-image: url('../../assets/Backg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     h1 {
         font-size: 322px;
         @include text-main-fonts;
-        margin-top: 10%;
+        margin-top: 0.5em; // Utilisation d'une unité relative
+        text-shadow: 5px 5px 20px #000000;
     }
+}
+
+.aboutus {
+    background: #459A77;
+    .text-image-container {
+        display: flex;
+        width: 85%;
+        p {
+            font-family: "Khand";
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            margin-right: 5%;
+        }
+    }
+}
+
+.platsphares {
+    background: #8B0000;
 }
