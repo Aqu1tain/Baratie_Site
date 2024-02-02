@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "King Butcher";
+    src: url('../../assets/fonts/King\ Butcher\ .otf') format('truetype');
+}
+
+@mixin text-main-fonts {
+    font-family: 'King Butcher', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 100;
+}
+
+.catchtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    
+    h1 {
+        font-size: 322px;
+        @include text-main-fonts;
+        margin-top: 10%;
+    }
+}
