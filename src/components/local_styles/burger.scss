@@ -1,0 +1,16 @@
+.burger {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    width: 60px;
+    cursor: pointer;
+    div {
+        height: 6px;
+        border-radius: 1px;
+        width: 100%;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+}
