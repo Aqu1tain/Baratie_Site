@@ -1,6 +1,9 @@
 @import "../../pages/local_styles/homepage.scss";
 
 .card {
+    &:hover .card-img {
+        opacity: 1;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,4 +31,11 @@
             font-weight: 700;
         }
     }
+}
+.card-img {
+    opacity: 0;
+    transition: ease .2s;
+    position: absolute;
+    filter: brightness(0.5);    
+    z-index: -1;
 }
