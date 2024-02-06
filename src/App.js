@@ -5,10 +5,18 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 import Homepage from './pages/homepage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Carte from './pages/carte';
 
 function App() {
   return (
-      <Homepage />
+     <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="*" element={<Homepage />} />
+          <Route path="/carte" element={<Carte />} />
+        </Routes>
+     </BrowserRouter>
   );
 }
 

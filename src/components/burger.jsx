@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./local_styles/burger.scss";
 
@@ -32,9 +33,9 @@ export default function Burger(props) {
             <div className="overlayMenu">
                 <nav>
                     <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link to="/">Accueil</Link></li>
+                        <li><Link to="/Carte">Menu</Link></li>
+                        <li><Link to="/Contact">Contact</Link></li>
                     </ul>
                 </nav>
             </div>

@@ -2,6 +2,9 @@ import baratimg from "../assets/baratie-ext.png";
 import Card from "../components/card";
 import PlatsCard from "../components/platscard";
 import Burger from "../components/burger";
+import Footer from "../components/footer";
+
+
 import "./local_styles/homepage.scss";
 
 import React from "react";
@@ -46,6 +49,7 @@ export default function Homepage() {
                 <h2>Nos plats phares</h2>
                 <PlatsCard />
             </section>
+            <Footer />
         </div>
     );
 }

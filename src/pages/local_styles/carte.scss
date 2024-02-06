@@ -1,0 +1,14 @@
+div.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    z-index: -5;
+}
+
+section.panel {
+    display: flex;
+    color: #000;
+}
