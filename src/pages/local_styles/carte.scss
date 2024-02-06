@@ -1,14 +1,48 @@
+$fontKingButcherPath: '../../assets/fonts/King\ Butcher\ .otf';
+$fontKhandPath: '../../assets/fonts/Khand-Regular.ttf';
+
+@font-face {
+    font-family: "King Butcher";
+    src: url('#{$fontKingButcherPath}') format('truetype');
+}
+@font-face {
+    font-family: "Khand";
+    src: url('#{$fontKhandPath}') format('truetype');
+}
+
+@mixin text-main-fonts {
+    font-family: 'King Butcher', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 100;
+}
+
 div.carte {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     color: white;
-    padding: 10px;
+    background-color:  #8B0000;
+    position: relative;
     z-index: -5;
+    padding: 10px;
 }
 
-section.panel {
-    display: flex;
-    color: #000;
+div.panel {
+    &.menus{
+        h1 {
+            @include text-main-fonts;
+            font-size: 90px;
+        }
+
+        h2 {
+            @include text-main-fonts;
+            font-size: 50px;
+        }
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 75%;
+    }
 }

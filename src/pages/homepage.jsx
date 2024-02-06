@@ -8,11 +8,6 @@ import Footer from "../components/footer";
 import "./local_styles/homepage.scss";
 
 import React from "react";
-import { gsap } from "gsap";
-
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Homepage() {
     /*
