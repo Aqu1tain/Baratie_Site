@@ -12,7 +12,7 @@ export default function Menu(props) {
                 <ul>
                 {props.items.map((item, index) => (
                     <li key={index}>
-                    {item.name} - {item.price} Berries
+                    {item.name} - {item.price} ฿
                     </li>
                 ))}
                 </ul>

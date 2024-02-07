@@ -34,7 +34,7 @@ export default function Burger(props) {
                 <nav>
                     <ul>
                         <li><Link to="/">Accueil</Link></li>
-                        <li><Link to="/Carte">Menu</Link></li>
+                        <li><Link to="/Carte">La Carte</Link></li>
                         <li><Link to="/Contact">Contact</Link></li>
                     </ul>
                 </nav>

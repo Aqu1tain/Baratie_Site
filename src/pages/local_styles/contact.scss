@@ -1,0 +1,108 @@
+$fontKingButcherPath: '../../assets/fonts/King\ Butcher\ .otf';
+$fontKhandPath: '../../assets/fonts/Khand-Regular.ttf';
+
+@font-face {
+    font-family: "King Butcher";
+    src: url('#{$fontKingButcherPath}') format('truetype');
+}
+@font-face {
+    font-family: "Khand";
+    src: url('#{$fontKhandPath}') format('truetype');
+}
+
+@mixin text-main-fonts {
+    font-family: 'King Butcher', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 100;
+}
+
+div.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color:  #459A77;
+    position: relative;
+    z-index: -5;
+    padding: 10px;
+    height: 100vh;
+}
+
+div.contact-container {
+    h1 {
+        @include text-main-fonts;
+        font-size: 90px;
+        text-align: center;
+        margin: 50px 0;
+
+    }
+
+    h2 {
+        @include text-main-fonts;
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 75%;
+    .form-container {
+        display: flex;
+        div {
+            width: 40%;
+            padding: 20px;
+            margin: 20px;
+            background-color: #8B0000;
+            span {
+                font-family: "Khand";
+                font-size: 20px;
+            }
+        }
+        form {
+            width: 60%;
+            margin: 20px;
+           
+            textarea {
+    
+                margin: 10px 0;
+                width: 75%;
+                height: 150px;
+                padding : 10px;
+                border: none;
+                font-family: "Khand";
+                font-size: 20px;
+            }
+            input {
+                margin: 10px 0;
+                width: 75%;
+                height: 30px;
+                padding : 10px;
+                border: none;
+                font-family: "Khand";
+                font-size: 20px;
+            }
+            button {
+                margin: 10px 0;
+                width: 80%;
+                height: 40px;
+                background-color: #8B0000;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-family: "Khand";
+                font-size: 20px;
+                /* On hover */
+                &:hover {
+                    background-color: #A52A2A;
+                }
+                &:active {
+                    background-color: #dc7070;
+                }
+                
+            }
+        }
+    }
+    
+}

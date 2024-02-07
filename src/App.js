@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import Homepage from './pages/homepage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Carte from './pages/carte';
+import Contact from './pages/contact';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="*" element={<Homepage />} />
           <Route path="/carte" element={<Carte />} />
+          <Route path="/carte/*" element={<Carte />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/*" element={<Contact />} />
         </Routes>
      </BrowserRouter>
   );
