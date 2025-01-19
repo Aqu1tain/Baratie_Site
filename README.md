@@ -1,3 +1,17 @@
+<div align="center">
+
+# ════ ACADEMIC PROJECT ════
+
+###  Site Baratie
+
+**⟦** <a href="https://www.supdevinci.fr/" target="_blank">SUP DE VINCI</a> **⟧** 
+
+*Bachelor's Degree*
+
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
+</div>
+
 # Baratie React Site
 
 ## Contexte
